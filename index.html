@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Tareas</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- link CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="m-2 text-center">Lista De Tareas</h1>
+        </div>
+    </div>
+        <div class="col">
+            <form action="" class="d-flex justify-content-center" onsubmit="return false">
+                <div class="col-auto">
+                    <input type="text" id="nuevaTarea" class="form-control" placeholder="Ingresa Una Tarea">
+                </div>
+                <div class="col-auto ms-3">
+                    <button type="submit" class="btn btn-success" id="addTarea">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="row m-2">
+            <div class="col">
+                <div id="msg"></div>
+                <ul id="listaTareas" class="list-group d-flex">
+                    <!-- Las tareas se renderizan con Javascript -->
+<!--                     <li>tarea 1</li>
+                        <li>tarea 2</li>
+                        <li>tarea 3</li> -->
+                </ul>
+            </div>
+        </div>
+</div>
+
+
+    <!-- Link CDN JS Bootstrap y FontAwesome -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ec1ae304f2.js" crossorigin="anonymous"></script>
+    <script src="/Js/App.js"></script>
+    </body>
+
+</html>
