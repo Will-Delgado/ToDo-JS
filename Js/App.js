@@ -3,7 +3,6 @@ console.log('conectados');
 const nuevaTarea = document.getElementById('nuevaTarea');
 const listaTareas = document.getElementById('listaTareas');
 const addTareas = document.getElementById('addTarea');
-const mensaje = document.getElementById('msg');
 const msg = "Campo Vacio, Ingresa una tarea";
 
 /* declaramos la funcion para añadir la tarea */
@@ -20,13 +19,13 @@ function addTarea(e) {
         //render que mostrara la lista
         tarea.innerHTML = `
         <span>${textoTarea}</span>
-        <button class="btn btn-danger ms-2 float-end" id="btnEliminar">
+        <button class="btn btn-outline-danger ms-2 float-end" id="btnEliminar">
         <i class="fa-regular fa-trash-can"></i>
         </button> 
-        <button class="btn btn-success ms-2 float-end" id="btnCompletar" data-completed="false">
+        <button class="btn btn-outline-success ms-2 float-end" id="btnCompletar" data-completed="false">
         <i class="fa-solid fa-check-double"></i>
         </button>
-        <button class="btn btn-warning ms-2 float-end" id="btnEditar">
+        <button class="btn btn-outline-warning ms-2 float-end" id="btnEditar">
         <i class="fa-solid fa-pen-to-square"></i>
         </button>
 
